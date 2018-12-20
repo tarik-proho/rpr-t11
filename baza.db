@@ -1,0 +1,14 @@
+CREATE TABLE GRAD
+(
+    id int PRIMARY KEY,
+    naziv varchar(30),
+    broj_stanovnika int
+    drzava int FOREIGN KEY
+)
+
+CREATE TABLE drzava
+(
+    id int PRIMARY KEY,
+    naziv varchar(30),
+    glavni_grad int FOREIGN KEY
+)
