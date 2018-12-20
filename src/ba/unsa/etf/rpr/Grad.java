@@ -46,6 +46,14 @@ public class Grad {
         this.brojStanovnika=brojStanovnika;
     }
 
+    @Override
+    public String toString() {
+        if (getDrzava() == null)
+            return getNaziv() + "()" + " - " + getBrojStanovnika();
+
+        return getNaziv() + " (" + getDrzava().getNaziv() + ")" + " - " + getBrojStanovnika();
+    }
+
 
 
 }

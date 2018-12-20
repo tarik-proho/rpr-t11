@@ -38,4 +38,9 @@ public class Drzava {
     public Grad getGlavniGrad() {
         return glavniGrad;
     }
+
+    @Override
+    public String toString() {
+        return getNaziv();
+    }
 }
